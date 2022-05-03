@@ -1,0 +1,27 @@
+.container-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #109d58; */
+  background-image: linear-gradient(to right, #109d58, #3b79f2);
+  width: 350px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 15px 2px rgba(0, 0, 0, 0.2) ;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/*color: #3b79f2;
+color: #109d58;*/
+.container-timer span {
+  /* margin-right: 5px; */
+  /* margin-left: 5px; */
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+}

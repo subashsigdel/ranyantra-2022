@@ -1,0 +1,64 @@
+.register-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.register-container h3 {
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(112, 113, 114);
+}
+.register-container span {
+  font-size: 14px;
+  color: rgb(112, 113, 114);
+}
+.register-container span a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #225bce;
+}
+.register-container form {
+  margin-top: 20px;
+  width: 40%;
+  /* background-color: rgb(247, 244, 244); */
+  border-radius: 5px;
+  border: 1px solid rgb(247, 244, 244);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  /* box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3); */
+}
+.register-container form .textField {
+  width: 70%;
+}
+
+.register-container form button {
+  width: 70%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 5px;
+  /* background: #3b79f2; */
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  /* box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.3); */
+  transition: background 0.3s;
+}
+
+.signup-google {
+  background: rgb(240, 237, 237) !important;
+  /* height: 40px; */
+  color: grey !important;
+  /* width: 69.6% !important; */
+  /* box-shadow: 1px 3px 5px -1px rgba(0, 0, 0, 0.1),
+    -1px -1px 5px -1px rgba(0, 0, 0, 0.2) !important; */
+  letter-spacing: 1px;
+}
+.signup-google:hover {
+  background: white !important;
+}
