@@ -75,6 +75,7 @@ function EventPage() {
 
         <div className="event-highlights">
           <span className="heading">Highlights of Yantra Learning:</span>
+          <div></div>
         </div>
       </div>
     </div>
