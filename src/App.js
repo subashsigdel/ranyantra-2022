@@ -5,12 +5,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { useEffect } from "react";
-import Event from "./components/Event";
 import News from "./components/News";
 import About from "./components/About";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Timer from "./components/Timer";
+import EventPage from "./components/EventPage";
 
 function App() {
   useEffect(() => {
@@ -24,7 +24,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/event" element={<Event />} />
+        <Route path="/event" element={<EventPage />} />
         <Route path="/news" element={<News />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
