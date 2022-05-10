@@ -35,11 +35,7 @@ function Homepage() {
       <div className="container-section">
         <div className="event-brief">
           <div className="div1" data-aos="fade-right">
-            <h2
-              style={{
-                minHeight: "90px",
-              }}
-            >
+            <h2>
               <Typewriter
                 options={{
                   strings: ["Science, Tech & <br> Entrepreneurhip Festival"],

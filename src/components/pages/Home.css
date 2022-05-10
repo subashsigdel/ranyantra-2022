@@ -38,6 +38,7 @@
   letter-spacing: 1px;
   font-size: 35px;
   line-height: 40px;
+  min-height: 90px;
 }
 .event-brief p {
   font-weight: 300;
