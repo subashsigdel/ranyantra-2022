@@ -1,6 +1,7 @@
 import React from "react";
 import "./Event.css";
-import logoPDF from "../images/pdflogo.png";
+import logoPDF from "../../images/pdflogo.png";
+import Footer from "./Footer";
 
 function EventPage() {
   return (
@@ -75,9 +76,36 @@ function EventPage() {
 
         <div className="event-highlights">
           <span className="heading">Highlights of Yantra Learning:</span>
-          <div></div>
+          <ul>
+            <li>
+              Robo Business Cup is a national event focused on creating next
+              step platform for innovative and creative science & technology
+              community
+            </li>
+            <li>
+              Robo Business Cup is a national event focused on creating next
+              step platform for innovative and creative science & technology
+              community
+            </li>
+            <li>
+              Robo Business Cup is a national event focused on creating next
+              step platform for innovative and creative science & technology
+              community
+            </li>
+            <li>
+              Robo Business Cup is a national event focused on creating next
+              step platform for innovative and creative science & technology
+              community
+            </li>
+            <li>
+              Robo Business Cup is a national event focused on creating next
+              step platform for innovative and creative science & technology
+              community
+            </li>
+          </ul>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

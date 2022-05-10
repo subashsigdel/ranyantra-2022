@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import banner2 from "../images/banner2.png";
-import banner from "../images/banner.png";
+
 import "./Home.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,10 +10,11 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { Margin, NavigateBefore } from "@mui/icons-material";
 import Timer from "./Timer";
 import { BiCalendar, BiMap, BiAlarm } from "react-icons/bi";
-import ranlogo from "../images/RANlogo.png";
-import timelinelogo from "../images/event_girl.svg";
+import ranlogo from "../../images/RANlogo.png";
+import timelinelogo from "../../images/event_girl.svg";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Footer from "./Footer";
+import Typewriter from "typewriter-effect";
 
 function Homepage() {
   const navigate = useNavigate();
@@ -25,17 +25,76 @@ function Homepage() {
   const element = useRef();
   const leftScrollHandler = () => {
     element.current.scrollLeft -= 330;
-    console.log(element.current.scrollLeft);
   };
 
   const rightScrollHandler = () => {
     element.current.scrollLeft += 330;
-
-    console.log(element);
   };
   return (
     <div className="home">
-      <div className="top-section">
+      <div className="container-section">
+        <div className="event-brief">
+          <div className="div1" data-aos="fade-right">
+            <h2
+              style={{
+                minHeight: "90px",
+              }}
+            >
+              <Typewriter
+                options={{
+                  strings: ["Science, Tech & <br> Entrepreneurhip Festival"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+
+          <div className="date-location" data-aos="fade-right">
+            <span>
+              <BiCalendar className="icon" /> April 10 to April 20, 2022
+            </span>
+            <span>
+              <BiMap className="icon" /> Pulchowk-3 Lalitpur, Nepal
+            </span>
+          </div>
+          <div className="overlay-bottom">
+            <div className="presentedby" data-aos="fade-right">
+              <span>Presented by</span>
+              <img src={ranlogo} />
+            </div>
+
+            <div className="overlay-bottom-right" data-aos="fade-left">
+              <div className="days-event-partners">
+                <div>
+                  <h1>10</h1>
+                  <span>DAYS</span>
+                </div>
+                <div>
+                  <h1>7</h1>
+                  <span>EVENTS</span>
+                </div>
+                <div>
+                  <h1>60+</h1>
+                  <span>PARTNERS</span>
+                </div>
+              </div>
+              <p>
+                <BiAlarm style={{ marginRight: "5px", fontSize: "18px" }} /> 5
+                DAYS TO GO
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="top-section">
         <div className="overlay">
           <div className="event-brief">
             <div>
@@ -86,7 +145,7 @@ function Homepage() {
             TO GO
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="eventSlider">
         {/* */}
         <Swiper
@@ -173,7 +232,7 @@ function Homepage() {
       <div className="timelineSection">
         <h2>EVENTS TIMELINE</h2>
         <div className="timeline-container">
-          <img src={timelinelogo} />
+          <img src={timelinelogo} data-aos="fde-up" />
           <div className="timeline">
             <FaChevronLeft className="left-arrow" onClick={leftScrollHandler} />
             <FaChevronRight
@@ -181,7 +240,11 @@ function Homepage() {
               onClick={rightScrollHandler}
             />
 
-            <div className="timeline-card-section" ref={element}>
+            <div
+              className="timeline-card-section"
+              ref={element}
+              data-aos="fade-up"
+            >
               <div className="timeline-card">
                 <h2>Poush 1-8</h2>
                 <h3>Workshop and Seminars</h3>

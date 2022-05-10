@@ -96,3 +96,11 @@
 .event-highlights .heading {
   font-weight: 700;
 }
+.event-highlights ul {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.event-highlights ul li {
+  margin-top: 10px;
+  font-weight: 300;
+}
