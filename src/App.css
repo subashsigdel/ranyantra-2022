@@ -9,6 +9,7 @@
   --green: #109d58;
   --dark: #343434;
   --light-green: #d2fae6;
+  --grey: #c4c4c4;
 }
 html {
   scroll-behavior: smooth;

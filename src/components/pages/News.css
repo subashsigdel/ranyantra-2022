@@ -1,0 +1,138 @@
+.news-headersection {
+  background-color: var(--dark);
+  padding: 140px 0 55px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.news-headersection h1 {
+  color: var(--green);
+  font-size: 40px;
+}
+.news-section {
+  background-color: var(--light-green);
+  width: 100%;
+  padding: 60px 0;
+}
+.news-container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.news-left-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.news-right-container {
+  width: 35%;
+}
+.news-description-card {
+  border-radius: 15px;
+  background-color: white;
+}
+.news-image-section {
+  height: 260px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--grey);
+}
+.news-description {
+  padding: 20px;
+}
+
+.news-description h3 {
+  font-weight: 500;
+}
+.news-description p {
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 22px;
+}
+.news-description button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  margin-bottom: 5px;
+  background-color: var(--green);
+  cursor: pointer;
+}
+.date-creator {
+  margin-top: 13px;
+  font-weight: 450;
+  font-size: 13px;
+  display: flex;
+}
+.date-creator div span {
+  display: flex;
+}
+.date-creator div:nth-child(2) {
+  margin-left: 8px;
+}
+.date-creator .ic {
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+.news-headlines-card {
+  background-color: var(--grey);
+  width: 100%;
+  padding: 25px 15px;
+  border-radius: 15px;
+}
+.news-headlines-card h3 {
+  font-weight: 500;
+  color: #373737;
+}
+.news-headline-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.news-indiv-headline {
+  background-color: white;
+  padding: 14px 0;
+  padding-right: 12px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.news-indiv-headline .img-news {
+  height: 50px;
+  width: 50px;
+  background-color: var(--grey);
+}
+.news-indiv-headline .news-headline {
+  width: 80%;
+}
+.news-indiv-headline .news-headline p {
+  font-size: 15px;
+}
+.news-indiv-headline .news-headline span {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 960px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-left-container {
+    width: 100%;
+  }
+  .news-right-container {
+    width: 70%;
+    margin-right: 30px;
+    margin-top: 40px;
+  }
+}

@@ -15,9 +15,25 @@ function Footer() {
       </div>
       <div className="footer-mid">
         <span>Terms & Conditions</span>
-        <span> | </span>
+        <span
+          style={{
+            marginLeft: "10px",
+            marginRight: "10px",
+          }}
+        >
+          {" "}
+          |{" "}
+        </span>
         <span>Code of Conduct</span>
-        <span> | </span>
+        <span
+          style={{
+            marginLeft: "10px",
+            marginRight: "10px",
+          }}
+        >
+          {" "}
+          |{" "}
+        </span>
 
         <span>Event Privacy Note</span>
       </div>
