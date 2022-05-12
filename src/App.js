@@ -11,6 +11,7 @@ import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import EventPage from "./components/pages/EventPage";
 import axios from "axios";
+import EventTimeline from "./components/pages/EventTimeline";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/timeline" element={<EventTimeline />} />
       </Routes>
     </BrowserRouter>
   );

@@ -55,7 +55,7 @@ function Register() {
       >
         {({ errors, isValid, touched, dirty }) => (
           <Form data-aos="fade-down" data-aos-offset="300">
-            <h3>REGISTER YOUR ACCOUNT</h3>
+            <h4>REGISTER YOUR ACCOUNT</h4>
             <Field
               name="name"
               type="name"

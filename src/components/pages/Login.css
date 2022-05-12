@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
 }
-.login-container h3 {
+.login-container h4 {
   letter-spacing: 2px;
   margin-bottom: 20px;
   color: rgb(112, 113, 114);
@@ -65,7 +65,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .login-container form h3 {
-    font-size: 15px;
+  .login-container form h4 {
+    font-size: 15px !important;
   }
 }

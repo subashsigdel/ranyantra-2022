@@ -37,7 +37,7 @@ function Login() {
       >
         {({ errors, isValid, touched, dirty }) => (
           <Form data-aos="fade-down" data-aos-offset="300">
-            <h3>LOGIN TO YOUR ACCOUNT</h3>
+            <h4>LOGIN TO YOUR ACCOUNT</h4>
             <Field
               name="email"
               type="email"
