@@ -38,26 +38,24 @@ function Homepage() {
             <h2>
               <Typewriter
                 options={{
-                  strings: ["Science, Tech & <br> Entrepreneurhip Festival"],
+                  strings: ["Science, Tech & <br> Entrepreneurship Festival"],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+            Robotics Association of Nepal[RAN] has been organizing an Annual National and International Level Robotics Competition as part of Yantra for the last 11 years with a break of two years due to COVID-19. Yantra provides engineering, high schools and secondary school students and maker enthusiasts with knowledge and collaboration.
+
             </p>
           </div>
 
           <div className="date-location" data-aos="fade-right">
             <span>
-              <BiCalendar className="icon" /> April 10 to April 20, 2022
+              <BiCalendar className="icon" /> Nov 1, 2022 to Feb 28, 2023
             </span>
             <span>
-              <BiMap className="icon" /> Pulchowk-3 Lalitpur, Nepal
+              <BiMap className="icon" /> Bhanimandal, Ekantakuna, Lalitpur, Nepal
             </span>
           </div>
           <div className="overlay-bottom">
@@ -73,7 +71,7 @@ function Homepage() {
                   <span>DAYS</span>
                 </div>
                 <div>
-                  <h1>7</h1>
+                  <h1>9</h1>
                   <span>EVENTS</span>
                 </div>
                 <div>
@@ -160,9 +158,9 @@ function Homepage() {
             <div className="slider-contents">
               <div className="slider-header-container">
                 <div>
-                  <h2>Yantra Automatic Akhada</h2>
+                  <h2>Yantra Warz</h2>
                   <span>
-                    <BiCalendar className="icon" /> April 10, 2022
+                    <BiCalendar className="icon" /> Jan 2, 2023
                   </span>
                 </div>
                 <button className="btnRegister">REGISTER NOW</button>
@@ -182,9 +180,9 @@ function Homepage() {
             <div className="slider-contents">
               <div className="slider-header-container">
                 <div>
-                  <h2>Yantra Automatic Akhada</h2>
+                  <h2>Yantra Autonomous Industries</h2>
                   <span>
-                    <BiCalendar className="icon" /> April 10, 2022
+                    <BiCalendar className="icon" /> Jan 2, 2023
                   </span>
                 </div>
                 <button className="btnRegister">REGISTER NOW</button>
