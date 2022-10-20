@@ -46,10 +46,8 @@ function Homepage() {
               />
             </h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+            Robotics Association of Nepal[RAN] has been organizing an Annual National and International Level Robotics Competition as part of Yantra for the last 11 years with a break of two years due to COVID-19. Yantra provides engineering, high schools and secondary school students and maker enthusiasts with knowledge and collaboration.
+
             </p>
           </div>
 
@@ -58,8 +56,7 @@ function Homepage() {
               <BiCalendar className="icon" /> Nov 1, 2022 to Feb 28, 2023
             </span>
             <span>
-              <BiMap className="icon" /> Bhanimandal, Ekantakuna, Lalitpur,
-              Nepal
+              <BiMap className="icon" /> Bhanimandal, Ekantakuna, Lalitpur, Nepal
             </span>
           </div>
           <div className="overlay-bottom">
