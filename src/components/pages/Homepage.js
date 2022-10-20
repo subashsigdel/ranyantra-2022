@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Margin, NavigateBefore } from "@mui/icons-material";
-import Timer from "./Timer";
+import Timer, { Days } from "./Timer";
 import { BiCalendar, BiMap, BiAlarm } from "react-icons/bi";
 import ranlogo from "../../images/RANlogo.png";
 import timelinelogo from "../../images/event_girl.svg";
@@ -30,6 +30,7 @@ function Homepage() {
   const rightScrollHandler = () => {
     element.current.scrollLeft += 330;
   };
+
   return (
     <div className="home">
       <div className="container-section">
@@ -38,7 +39,7 @@ function Homepage() {
             <h2>
               <Typewriter
                 options={{
-                  strings: ["Science, Tech & <br> Entrepreneurhip Festival"],
+                  strings: ["Science, Tech & <br> Entrepreneurship Festival"],
                   autoStart: true,
                   loop: true,
                 }}
@@ -54,10 +55,11 @@ function Homepage() {
 
           <div className="date-location" data-aos="fade-right">
             <span>
-              <BiCalendar className="icon" /> April 10 to April 20, 2022
+              <BiCalendar className="icon" /> Nov 1, 2022 to Feb 28, 2023
             </span>
             <span>
-              <BiMap className="icon" /> Pulchowk-3 Lalitpur, Nepal
+              <BiMap className="icon" /> Bhanimandal, Ekantakuna, Lalitpur,
+              Nepal
             </span>
           </div>
           <div className="overlay-bottom">
@@ -69,11 +71,13 @@ function Homepage() {
             <div className="overlay-bottom-right" data-aos="fade-left">
               <div className="days-event-partners">
                 <div>
-                  <h1>10</h1>
+                  <h1>
+                    <Days />
+                  </h1>
                   <span>DAYS</span>
                 </div>
                 <div>
-                  <h1>7</h1>
+                  <h1>9</h1>
                   <span>EVENTS</span>
                 </div>
                 <div>
@@ -82,7 +86,7 @@ function Homepage() {
                 </div>
               </div>
               <p>
-                <BiAlarm style={{ marginRight: "5px", fontSize: "18px" }} /> 5
+                <BiAlarm style={{ marginRight: "5px", fontSize: "18px" }} /> 10
                 DAYS TO GO
               </p>
             </div>
@@ -160,9 +164,9 @@ function Homepage() {
             <div className="slider-contents">
               <div className="slider-header-container">
                 <div>
-                  <h2>Yantra Automatic Akhada</h2>
+                  <h2>Yantra Warz</h2>
                   <span>
-                    <BiCalendar className="icon" /> April 10, 2022
+                    <BiCalendar className="icon" /> Feb 01, 2023
                   </span>
                 </div>
                 <button className="btnRegister">REGISTER NOW</button>
@@ -182,9 +186,9 @@ function Homepage() {
             <div className="slider-contents">
               <div className="slider-header-container">
                 <div>
-                  <h2>Yantra Automatic Akhada</h2>
+                  <h2>Yantra Autonomous Industries</h2>
                   <span>
-                    <BiCalendar className="icon" /> April 10, 2022
+                    <BiCalendar className="icon" /> Feb 01, 2023
                   </span>
                 </div>
                 <button className="btnRegister">REGISTER NOW</button>
@@ -203,7 +207,7 @@ function Homepage() {
         </Swiper>
       </div>
 
-      {/* <span
+      <span
         style={{
           display: "flex",
           justifyContent: "center",
@@ -216,15 +220,15 @@ function Homepage() {
         }}
       >
         Time Left For Event
-      </span> */}
-      {/* <div
+      </span>
+      <div
         style={{
           margin: "auto",
           marginTop: "-30px",
         }}
       >
         <Timer />
-      </div> */}
+      </div>
       <div className="timelineSection">
         <h2>EVENTS TIMELINE</h2>
         <div className="timeline-container">
