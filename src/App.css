@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  
 }
 :root {
   --blue: #3b79f2;
@@ -23,4 +24,11 @@ html {
 }
 .container {
   margin-top: 75px;
+}
+
+
+.error__image{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/error.jpg");
 }

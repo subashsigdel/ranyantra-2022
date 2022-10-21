@@ -12,6 +12,8 @@ import Register from "./components/pages/Register";
 import EventPage from "./components/pages/EventPage";
 import axios from "axios";
 import EventTimeline from "./components/pages/EventTimeline";
+import Sidebar from "./components/Dashboard/Sidebar";
+import NotFound from "./components/pages/NotFound"
 
 function App() {
   useEffect(() => {
@@ -35,6 +37,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/timeline" element={<EventTimeline />} />
+        <Route path="/admin/dashboard" element={<Sidebar />} />
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
     </BrowserRouter>
   );

@@ -36,8 +36,13 @@
   align-items: center;
   position: relative;
   text-decoration: none;
-  color: white;
+  font-family: Lato-BlackItalic;
+  color: blue;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
+
+
 
 /* .navbar ul li a::after {
   content: "";
@@ -81,6 +86,9 @@
 }
 .listitem .dropdown a {
   color: #088147;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
 }
 
 .listitem img {

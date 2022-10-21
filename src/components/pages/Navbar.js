@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../images/logo.png";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
@@ -60,7 +61,7 @@ function Navbar() {
         }}
       >
         <img src={logo} />
-        <h3>YANTRA 10.0</h3>
+        <h3>YANTRA 9.0</h3>
       </div>
       <ul>
         <li>
@@ -71,14 +72,18 @@ function Navbar() {
 
         <li className="listitem">
           <NavLink activeClassName="active" to="/irc" className="link1">
-            IRC {!showIcon && <img src={vector} />}{" "}
+            Yantra {!showIcon && <img src={vector} />}{" "}
             {showIcon && <FiChevronDown className="listitem-icon" />}
           </NavLink>
           <div className="dropdown">
-            <a>menu1</a>
-            <a>menu1</a>
-            <a>menu1</a>
-            <a>menu1</a>
+            <Link to="/yantra2">Yantra 8.0</Link>
+            <Link to="/yantra3">Yantra 7.0 </Link>
+            <Link to="/yantra4">Yantra 6.0</Link>
+            <Link to="/yantra4">Yantra 5.0</Link>
+            <Link to="/yantra4">Yantra 4.0</Link>
+            <Link to="/yantra4">Yantra 3.0</Link>
+            <Link to="/yantra4">Yantra 2.0</Link>
+            <Link to="/yantra4">Yantra 1.0</Link>
           </div>
         </li>
 

@@ -27,6 +27,7 @@ function Login() {
   const submitHandler = (value, formHelper) => {
     console.log(value);
     formHelper.resetForm();
+    
   };
   return (
     <div className="container login-container">
@@ -86,13 +87,13 @@ function Login() {
             />
             <Box height={25} />
             <Button type="submit" variant="contained">
-              Signup
+              Login
             </Button>
             <Box height={25} />
-            <Button type="submit" variant="contained" className="signup-google">
+            {/* <Button type="submit" variant="contained" className="signup-google">
               Sign In with Google{" "}
               <FcGoogle style={{ fontSize: "20px", marginLeft: "10px" }} />
-            </Button>
+            </Button> */}
             <Box height={25} />
             <span>
               Haven't created an account?{" "}
